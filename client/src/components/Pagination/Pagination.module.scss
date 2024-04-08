@@ -1,0 +1,11 @@
+.pagination {
+    display: flex;
+    float: right;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+.pagination button:disabled {
+    background-color: #333;
+    color: #fff;
+}

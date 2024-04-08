@@ -1,0 +1,133 @@
+@import 'normalize.css';
+
+:root {
+    --primary: #008486;
+    --destroy: #ff0000;
+    --white: #ffffff;
+    --black: #000000;
+    --background-color: #f3f3f3;
+    --height-header: 70px;
+    --height-footer: 46px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+svg {
+    color: var(--black);
+
+    + svg {
+        margin-left: 8px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        color: var(--primary);
+    }
+}
+
+div.page-title {
+    padding: 15px;
+    color: var(--white);
+    background-color: var(--primary);
+    border-radius: 10px;
+}
+
+div.box {
+    background-color: var(--background-color);
+    margin: 10px 0px 0px 0px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+div.box-scroll {
+    overflow-y: scroll;
+    height: calc(100vh - var(--height-header) - var(--height-footer) - 95px);
+}
+
+div.box-scroll-small {
+    height: calc(100vh - var(--height-header) - var(--height-footer) - 185px);
+}
+
+div.box-action {
+    display: flex;
+    justify-content: space-between;
+}
+
+table.table {
+    width: 100%;
+    color: #333333;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table.table thead {
+    background-image: linear-gradient(var(--background-color), #ccc);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-wrap: nowrap;
+}
+
+table.table tbody {
+    font-size: 1.4rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+table.table tr th,
+td {
+    padding: 5px 10px;
+}
+
+table.table tr:nth-child(even) td {
+    background-color: #dfdfdf;
+}
+
+table.table tr:hover td {
+    cursor: pointer;
+    background-color: #eaeaea;
+}
+
+table.table .table-align-left {
+    text-align: left;
+}
+
+table.table tr.tr-blue {
+    color: var(--primary);
+}
+
+table.table tr.tr-red {
+    color: var(--destroy);
+}
+
+.popup-content {
+    width: 70%;
+    max-height: 80vh;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: var(--background-color);
+    overflow: auto;
+}
+
+.popup-arrow {
+    color: rgb(255, 255, 255);
+}
+
+.popup-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}

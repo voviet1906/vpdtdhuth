@@ -1,0 +1,47 @@
+.wapper {
+    display: flex;
+    justify-content: space-between;
+    height: var(--height-header);
+    box-shadow: 0px 2px 5px #aaa;
+    background-color: var(--background-color);
+}
+
+.header-left {
+    display: flex;
+    margin: 0px 20px;
+}
+
+.header-logo img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 15px 0px;
+}
+
+.header-content {
+    display: flexbox;
+    text-align: center;
+    font-weight: 600;
+    margin: auto 10px;
+
+    .header-title {
+        color: var(--destroy);
+    }
+
+    .header-sub-title {
+        color: var(--primary);
+    }
+}
+
+.header-right {
+    display: flex;
+    margin: auto 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+
+    svg {
+        margin-left: 10px;
+    }
+}

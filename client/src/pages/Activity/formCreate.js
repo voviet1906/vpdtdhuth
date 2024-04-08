@@ -1,0 +1,65 @@
+const inputs = [
+    {
+        id: 1,
+        name: 'name',
+        type: 'text',
+        placeholder: 'Tuyên dương Sinh viên 5 tốt năm học 2023 - 2024',
+        label: 'Tên hoạt động',
+        required: true,
+    },
+    {
+        id: 2,
+        name: 'tochuc',
+        type: 'text',
+        placeholder: 'Đoàn - Hội UTH',
+        label: 'Đơn vị tổ chức',
+        required: true,
+    },
+    {
+        id: 3,
+        name: 'phoihop',
+        type: 'text',
+        placeholder: 'Đoàn - Hội UTH',
+        label: 'Đơn vị phối hợp',
+    },
+    {
+        id: 4,
+        name: 'ngaybatdau',
+        type: 'date',
+        label: 'Ngày bắt đầu',
+        required: true,
+    },
+    {
+        id: 5,
+        name: 'ngayketthuc',
+        type: 'date',
+        label: 'Ngày kết thúc',
+        required: true,
+    },
+    {
+        id: 6,
+        name: 'diadiem',
+        type: 'text',
+        label: 'Địa điểm tổ chức',
+        placeholder: 'Số 02 Võ Oanh, Phường 25, Quận Bình Thạnh, TP. HCM',
+        required: true,
+    },
+    {
+        id: 7,
+        name: 'vanban',
+        type: 'text',
+        placeholder: 'https://www.facebook.com/doanhoiuth',
+        label: 'Văn bản',
+        required: true,
+    },
+    {
+        id: 8,
+        classify: '1',
+        name: 'noidung',
+        type: 'date',
+        label: 'Nội dung thực hiện',
+        required: true,
+    },
+];
+
+export default inputs;

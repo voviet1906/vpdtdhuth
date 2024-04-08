@@ -1,0 +1,21 @@
+.form-select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label {
+    text-wrap: nowrap;
+    line-height: 46px;
+    min-width: 50px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.select {
+    width: 100%;
+    height: 46px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
